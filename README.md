@@ -1,0 +1,67 @@
+# Hey !!!  - Made in Brazil -
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=104)] ❤️
+
+#!/bin/bash
+
+CloudEngineer() {
+    local name="Luis"
+    local role="Cloud Engineer"
+    local languages=("pt_BR" "en_US" "es_LA" "bash")
+
+    local greet() {
+        echo "Salve! Sou um Cloud Engineer de alma brasileira, e vivo entre servidores e nuvens! ☁️💻"
+        echo "Falo ${languages[0]} no dia-a-dia, mas meu coração bate forte por automações."
+        echo "I love to automate cloud solutions to make everything run smoothly! 🌐"
+        echo "Me encanta trabajar con la nube para mejorar la eficiencia y escalabilidad. ☁️🔥"
+    }
+
+    echo "Classe* CloudEngineer instanciada!"
+
+    greet
+}
+cloud_engineer=CloudEngineer
+cloud_engineer
+
+
+## 📝 Blogs
+
+- Personal website and blog: https://luishenriqueops.github.io/
+
+
+## 🌐 Technologies & Tools
+
+**Cloud Services:**
+
+![API Gateway](https://img.shields.io/badge/API-Gateway-informational?style=flat&logo=amazon-api-gateway&logoColor=white&color=6aa6f8)
+![DynamoDB](https://img.shields.io/badge/Database-DynamoDB-informational?style=flat&logo=amazon-dynamodb&logoColor=white&color=6aa6f8)
+![Lambda](https://img.shields.io/badge/Compute-AWS_Lambda-informational?style=flat&logo=aws-lambda&logoColor=white&color=6aa6f8)
+![ECS Fargate](https://img.shields.io/badge/Container-ECS_Fargate-informational?style=flat&logo=amazon-ecs&logoColor=white&color=6aa6f8)
+![SQS](https://img.shields.io/badge/Queue-SQS-informational?style=flat&logo=amazon-sqs&logoColor=white&color=6aa6f8)
+![SNS](https://img.shields.io/badge/Pub/Sub-SNS-informational?style=flat&logo=amazon-sns&logoColor=white&color=6aa6f8)
+![S3](https://img.shields.io/badge/Storage-S3-informational?style=flat&logo=amazon-s3&logoColor=white&color=6aa6f8)
+![IAM](https://img.shields.io/badge/Security-IAM-informational?style=flat&logo=amazon-iam&logoColor=white&color=6aa6f8)
+![VPC](https://img.shields.io/badge/Network-VPC-informational?style=flat&logo=amazon-vpc&logoColor=white&color=6aa6f8)
+![CloudWatch](https://img.shields.io/badge/Monitoring-CloudWatch-informational?style=flat&logo=amazon-cloudwatch&logoColor=white&color=6aa6f8)
+![X-Ray](https://img.shields.io/badge/Tracing-X--Ray-informational?style=flat&logo=amazon-xray&logoColor=white&color=6aa6f8)
+
+**Programming Languages:**
+
+![Bash](https://img.shields.io/badge/Code-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=6aa6f8) ❤️
+![C](https://img.shields.io/badge/Code-C-informational?style=flat&logo=c&logoColor=white&color=6aa6f8)
+![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=6aa6f8)
+![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8)
+
+
+**Tools and Services:**
+
+![AWS](https://img.shields.io/badge/Tools-AWS-informational?style=flat&logo=amazonaws&logoColor=white&color=FF9900)
+![Kubernetes](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=6aa6f8)
+![Docker](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=6aa6f8)
+![Terraform](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=7b42b0)
+![Ansible](https://img.shields.io/badge/Tools-Ansible-informational?style=flat&logo=ansible&logoColor=white&color=EE0000)
+![Jenkins](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=F7B93E)
+![Prometheus](https://img.shields.io/badge/Tools-Prometheus-informational?style=flat&logo=prometheus&logoColor=white&color=E6522C)
+![Grafana](https://img.shields.io/badge/Tools-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F46800)
+![Argo CD](https://img.shields.io/badge/Tools-Argo_CD-informational?style=flat&logo=argo&logoColor=white&color=F46800)
+
