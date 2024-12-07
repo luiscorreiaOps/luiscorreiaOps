@@ -1,7 +1,10 @@
 # Hey !!!  - Made in Brazil -
 
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=104)] ❤️
+![Open Source](https://img.shields.io/badge/Open%20Source-YES-brightgreen?style=flat&logo=linux&logoColor=white)
 
+
+
+```
 #!/bin/bash
 
 CloudEngineer() {
@@ -20,16 +23,18 @@ CloudEngineer() {
 
     greet
 }
+
 cloud_engineer=CloudEngineer
 cloud_engineer
+```
 
 
-## 📝 Blogs
+## Blogs
 
 - Personal website and blog: https://luishenriqueops.github.io/
 
 
-## 🌐 Technologies & Tools
+## Technologies & Tools
 
 **Cloud Services:**
 
@@ -47,21 +52,27 @@ cloud_engineer
 
 **Programming Languages:**
 
-![Bash](https://img.shields.io/badge/Code-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=6aa6f8) ❤️
-![C](https://img.shields.io/badge/Code-C-informational?style=flat&logo=c&logoColor=white&color=6aa6f8)
-![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=6aa6f8)
-![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8)
+![Bash](https://img.shields.io/badge/Code-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=6aa6f8) 
+![C](https://img.shields.io/badge/Code-C-informational?style=flat&logo=c&logoColor=white&color=6aa6f8) 
+![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=6aa6f8) 
+![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8) 
 
 
 **Tools and Services:**
 
-![AWS](https://img.shields.io/badge/Tools-AWS-informational?style=flat&logo=amazonaws&logoColor=white&color=FF9900)
-![Kubernetes](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=6aa6f8)
-![Docker](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=6aa6f8)
-![Terraform](https://img.shields.io/badge/Tools-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=7b42b0)
-![Ansible](https://img.shields.io/badge/Tools-Ansible-informational?style=flat&logo=ansible&logoColor=white&color=EE0000)
-![Jenkins](https://img.shields.io/badge/Tools-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=F7B93E)
-![Prometheus](https://img.shields.io/badge/Tools-Prometheus-informational?style=flat&logo=prometheus&logoColor=white&color=E6522C)
-![Grafana](https://img.shields.io/badge/Tools-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F46800)
-![Argo CD](https://img.shields.io/badge/Tools-Argo_CD-informational?style=flat&logo=argo&logoColor=white&color=F46800)
+![AWS](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazonaws&logoColor=white&color=FF9900)
+![GCP](https://img.shields.io/badge/Cloud-GCP-informational?style=flat&logo=googlecloud&logoColor=white&color=DB4437)
+![Azure](https://img.shields.io/badge/Cloud-Azure-informational?style=flat&logo=microsoftazure&logoColor=white&color=0078D4)
+![Kubernetes](https://img.shields.io/badge/Tool-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=6aa6f8)
+![Docker](https://img.shields.io/badge/Tool-Docker-informational?style=flat&logo=docker&logoColor=white&color=6aa6f8)
+![Terraform](https://img.shields.io/badge/Tool-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=7b42b0)
+![Ansible](https://img.shields.io/badge/Tool-Ansible-informational?style=flat&logo=ansible&logoColor=white&color=EE0000)
+![Jenkins](https://img.shields.io/badge/Tool-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=F7B93E)
+![Prometheus](https://img.shields.io/badge/Tool-Prometheus-informational?style=flat&logo=prometheus&logoColor=white&color=E6522C)
+![Grafana](https://img.shields.io/badge/Tool-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F46800)
+![Argo CD](https://img.shields.io/badge/Tool-Argo_CD-informational?style=flat&logo=argo&logoColor=white&color=F46800)
+
+
+
+
 
