@@ -69,3 +69,9 @@ cloud_engineer
 ![Grafana](https://img.shields.io/badge/Tool-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F46800)
 ![Argo CD](https://img.shields.io/badge/Tool-Argo_CD-informational?style=flat&logo=argo&logoColor=white&color=F46800)
 
+
+
+  **Cloud first, coffee second. ☁️☕**
+
+atualização automática:
+alterado em 2024-12-09 22:12:48
