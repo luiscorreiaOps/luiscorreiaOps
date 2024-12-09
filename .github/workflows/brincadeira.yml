@@ -12,19 +12,19 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Adicionar Frase Aleatória
+      - name: Add frases
         run: |
           QUOTES=(
-            "Keep learning! 🚀"
-            "Automate everything! 🤖"
-            "Debugging is like being a detective 🕵️‍♂️."
-            "Cloud first, coffee second. ☁️☕"
-            "The best code is no code at all. 💻✨"
-            "Infrastructure as Code is the way. 📜☁️"
-            "Think twice, code once. 🛠️"
-            "Work smarter, not harder. 🧠⚡"
-            "Containers are the future. 🐳🚀"
-            "Logs never lie. 📜🔥"
+            "**Keep learning! 🚀**"
+            "**Automate everything! 🤖**"
+            "**Debugging is like being a detective 🕵️‍♂️.**"
+            "**Cloud first, coffee second. ☁️☕**"
+            "**The best code is no code at all. 💻✨**"
+            "**Infrastructure as Code is the way. 📜☁️**"
+            "**Think twice, code once. 🛠️**"
+            "**Work smarter, not harder. 🧠⚡**"
+            "**Containers are the future. 🐳🚀**"
+            "**Logs never lie. 📜🔥**"
           )
           RANDOM_QUOTE=${QUOTES[$RANDOM % ${#QUOTES[@]}]}
 
@@ -38,9 +38,9 @@ jobs:
         run: |
           CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
           if grep -q "### Atualizações Automáticas" README.md; then
-            sed -i "s|- Alteração automática em .*|- Alteração automática em $CURRENT_DATE|g" README.md
+            sed -i "s|- Alteração automática em .*|- Alteração automática em *$CURRENT_DATE*|g" README.md
           else
-            echo -e "\n### Atualizações Automáticas\n- Alteração automática em $CURRENT_DATE" >> README.md
+            echo -e "\n### Atualizações Automáticas\n- Alteração automática em *$CURRENT_DATE*" >> README.md
           fi
 
       - name: Configurar Identidade Git
