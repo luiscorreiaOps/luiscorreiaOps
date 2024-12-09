@@ -68,10 +68,3 @@ cloud_engineer
 ![Prometheus](https://img.shields.io/badge/Tool-Prometheus-informational?style=flat&logo=prometheus&logoColor=white&color=E6522C)
 ![Grafana](https://img.shields.io/badge/Tool-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F46800)
 ![Argo CD](https://img.shields.io/badge/Tool-Argo_CD-informational?style=flat&logo=argo&logoColor=white&color=F46800)
-
-**Debugging is like being a detective 🕵️‍♂️.**
-
-
-atualização automática:
-
-alterado em 2024-12-09 22:24:04
