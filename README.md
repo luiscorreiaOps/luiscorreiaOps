@@ -36,7 +36,6 @@ cloud_engineer
 
 ## Technologies & Tools
 
-**Cloud Services:**
 
 ![API Gateway](https://img.shields.io/badge/API-Gateway-informational?style=flat&logo=amazon-api-gateway&logoColor=white&color=6aa6f8)
 ![DynamoDB](https://img.shields.io/badge/Database-DynamoDB-informational?style=flat&logo=amazon-dynamodb&logoColor=white&color=6aa6f8)
@@ -50,7 +49,6 @@ cloud_engineer
 ![CloudWatch](https://img.shields.io/badge/Monitoring-CloudWatch-informational?style=flat&logo=amazon-cloudwatch&logoColor=white&color=6aa6f8)
 ![X-Ray](https://img.shields.io/badge/Tracing-X--Ray-informational?style=flat&logo=amazon-xray&logoColor=white&color=6aa6f8)
 
-**Programming Languages:**
 
 ![Bash](https://img.shields.io/badge/Code-Bash-informational?style=flat&logo=gnu-bash&logoColor=white&color=6aa6f8) 
 ![C](https://img.shields.io/badge/Code-C-informational?style=flat&logo=c&logoColor=white&color=6aa6f8) 
@@ -58,7 +56,6 @@ cloud_engineer
 ![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8) 
 
 
-**Tools and Services:**
 
 ![AWS](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazonaws&logoColor=white&color=FF9900)
 ![GCP](https://img.shields.io/badge/Cloud-GCP-informational?style=flat&logo=googlecloud&logoColor=white&color=DB4437)
@@ -80,7 +77,8 @@ cloud_engineer
 Containers are the future. 🐳🚀
 
 
-**Infrastructure as Code is the way. 📜☁️**
 
 ### Atualizações Automáticas
-- Alteração automática em *2024-12-09 21:32:59*
+- Alteração automática em *2024-12-09 21:49:06*
+
+  **Cloud first, coffee second. ☁️☕**
