@@ -79,5 +79,8 @@ cloud_engineer
 
 Containers are the future. 🐳🚀
 
+
+**Infrastructure as Code is the way. 📜☁️**
+
 ### Atualizações Automáticas
-- Alteração automática em 2024-12-09 20:39:15
+- Alteração automática em *2024-12-09 21:32:59*
