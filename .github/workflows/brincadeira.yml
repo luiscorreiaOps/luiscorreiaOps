@@ -43,6 +43,11 @@ jobs:
             echo -e "\n### Atualizações Automáticas\n- Alteração automática em $CURRENT_DATE" >> README.md
           fi
 
+      - name: Configurar Identidade Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
       - name: Commit & Push
         env:
           GH_TOKEN3: ${{ secrets.GH_TOKEN3 }}
