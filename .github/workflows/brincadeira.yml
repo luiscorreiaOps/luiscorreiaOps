@@ -47,8 +47,6 @@ jobs:
         env:
           GH_TOKEN3: ${{ secrets.GH_TOKEN3 }}
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${GH_TOKEN3}@github.com/luiscorreiaOps/luiscorreiaOps.git
           git add README.md
           git commit -m "Atualização: \"$RANDOM_QUOTE\" e data automática" || echo "Nada a commitar."
