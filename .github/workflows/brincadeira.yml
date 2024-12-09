@@ -30,15 +30,15 @@ jobs:
 
           sed -i '/\*\*.*\*\*/d' README.md
 
-          echo -e "\n\n  $RANDOM_QUOTE" >> README.md  # Adiciona uma linha em branco antes da frase
+          echo -e "\n\n  $RANDOM_QUOTE" >> README.md
 
       - name: Data de Alteração
         run: |
           CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
           if grep -q "Atualizações Automáticas" README.md; then
-          sed -i "s|Alteração automática em .*|Alteração automática em _$CURRENT_DATE_|" README.md
+          sed -i "s|Alteração automática em .*|Alteração automática em $CURRENT_DATE|" README.md
           else
-          echo -e "\nAtualizações Automáticas\nAlteração automática em _$CURRENT_DATE_" >> README.md
+          echo -e "\natualização automática:\nalterado em $CURRENT_DATE" >> README.md
           fi
 
       - name: Configurar Identidade Git
