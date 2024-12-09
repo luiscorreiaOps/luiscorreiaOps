@@ -36,9 +36,9 @@ jobs:
         run: |
           CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
           if grep -q "Atualizações Automáticas" README.md; then
-          sed -i "s|Alteração automática em .*|Alteração automática em $CURRENT_DATE|" README.md
+          sed -i "s|atualização automática em .*|alterado em $CURRENT_DATE|" README.md
           else
-          echo -e "\natualização automática:\nalterado em $CURRENT_DATE" >> README.md
+          echo -e "\n\natualização automática:\n\nalterado em $CURRENT_DATE" >> README.md
           fi
 
       - name: Configurar Identidade Git
