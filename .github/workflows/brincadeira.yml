@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Add frases
+      - name: Add Frase
         run: |
           QUOTES=(
             "**Keep learning! 🚀**"
@@ -28,19 +28,17 @@ jobs:
           )
           RANDOM_QUOTE=${QUOTES[$RANDOM % ${#QUOTES[@]}]}
 
-          if grep -q "### Atualizações Automáticas" README.md; then
-            sed -i "/### Atualizações Automáticas/i \\\n$RANDOM_QUOTE\n" README.md
-          else
-            echo -e "\n$RANDOM_QUOTE" >> README.md
-          fi
+          sed -i '/\*\*.*\*\*/d' README.md
+
+          echo -e "\n  $RANDOM_QUOTE" >> README.md
 
       - name: Data de Alteração
         run: |
           CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
           if grep -q "### Atualizações Automáticas" README.md; then
-            sed -i "s|- Alteração automática em .*|- Alteração automática em *$CURRENT_DATE*|g" README.md
+          sed -i "s|- Alteração automática em .*|- Alteração automática em *$CURRENT_DATE*|g" README.md
           else
-            echo -e "\n### Atualizações Automáticas\n- Alteração automática em *$CURRENT_DATE*" >> README.md
+          echo -e "\n### Atualizações Automáticas\n- Alteração automática em *$CURRENT_DATE*" >> README.md
           fi
 
       - name: Configurar Identidade Git
@@ -54,5 +52,5 @@ jobs:
         run: |
           git remote set-url origin https://x-access-token:${GH_TOKEN3}@github.com/luiscorreiaOps/luiscorreiaOps.git
           git add README.md
-          git commit -m "Atualização: \"$RANDOM_QUOTE\" e data automática" || echo "Nada a commitar."
+          git commit -m "Keep Devoping" || echo "Nada a commitar."
           git push origin main
