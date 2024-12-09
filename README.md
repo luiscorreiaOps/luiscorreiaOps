@@ -69,16 +69,3 @@ cloud_engineer
 ![Grafana](https://img.shields.io/badge/Tool-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F46800)
 ![Argo CD](https://img.shields.io/badge/Tool-Argo_CD-informational?style=flat&logo=argo&logoColor=white&color=F46800)
 
-
-
-
-
-
-Containers are the future. 🐳🚀
-
-
-
-### Atualizações Automáticas
-- Alteração automática em *2024-12-09 21:49:06*
-
-  **Cloud first, coffee second. ☁️☕**
