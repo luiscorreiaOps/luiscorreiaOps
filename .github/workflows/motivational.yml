@@ -38,7 +38,7 @@ jobs:
             MOTIVATIONAL_TEXT="Well, it's not perfect, but it's definitely something!"
           fi
 
-          ESCAPED_TEXT=$(printf "%s" "$MOTIVATIONAL_TEXT" | sed 's/[&/\]/\\&/g')
+          ESCAPED_TEXT=$(printf "%s" "$MOTIVATIONAL_TEXT" | sed -E 's/[&/]/\\&/g; s/"/\\"/g')
 
           if grep -q '<div id="motivational-text">' index.html; then
             sed -i "s|<div id=\"motivational-text\">.*</div>|<div id=\"motivational-text\">$ESCAPED_TEXT</div>|" index.html
@@ -46,15 +46,15 @@ jobs:
             sed -i "/<body>/a <div id=\"motivational-text\">$ESCAPED_TEXT</div>" index.html
           fi
 
-      - name: catL
+      - name: cat
         run: cat index.html    
 
-      - name: Commit & Push
+      - name: Commit e Push
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add index.html
-          git commit -m "Keep Devoping"
+          git commit -m "Atualizando texto motivacional"
           git push origin main
 
       - name: Config
