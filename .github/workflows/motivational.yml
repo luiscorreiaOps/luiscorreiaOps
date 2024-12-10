@@ -60,10 +60,12 @@ jobs:
           git push origin main
 
       - name: Config
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: arti
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           path: './'
 
