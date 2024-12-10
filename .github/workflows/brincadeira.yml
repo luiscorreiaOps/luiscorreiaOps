@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  REP: "luiscorreiaOps/luiscorreiaOps.github.io"
+  REP: "luiscorreiaOps/luiscorreiaOps"
 
 jobs:
   add-quote:
