@@ -39,10 +39,10 @@ jobs:
           fi
 
           CLEANED_TEXT=$(echo "$MOTIVATIONAL_TEXT" | tr '\n' ' ' | sed 's/\s\s*/ /g' | sed 's/^ //;s/ $//')
-          ESCAPED_TEXT=$(printf "%s" "$CLEANED_TEXT" | sed 's/[&/\"]/\\&/g; s/\([[:space:]]\)/\\\1/g; s/\\/\\\\/g')
-          ESCAPED_TEXT=$(echo "$ESCAPED_TEXT" | sed 's/\\\//\//g' | sed 's/\\"/"/g' | sed 's/\\\\/\\/g')
 
-          sed -i '/<div id="motivational-text">/,/<\/div>/c\<div id="motivational-text">'$ESCAPED_TEXT'</div>' index.html
+          ESCAPED_TEXT=$(printf "%s" "$CLEANED_TEXT" | sed 's/[&/\"]/\\&/g; s/\([[:space:]]\)/\\\1/g; s/\\/\\\\/g')
+
+          sed -i 's|<div id="motivational-text">.*</div>|<div id="motivational-text">'"$ESCAPED_TEXT"'</div>|' index.html
       
       - name: cat index
         run: cat index.html    
