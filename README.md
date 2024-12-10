@@ -13,10 +13,10 @@ CloudEngineer() {
     local languages=("pt_BR" "en_US" "es_LA" "bash")
 
     local greet() {
-       echo "Salve! Sou um Cloud Engineer brasileiro e vivo entre servidores e nuvens!💻"
+       echo "Salve! Sou um Cloud Engineer brasileiro e vivo entre servidores e nuvens! 💻"
        echo "Falo ${languages[0]} no dia-a-dia, mas meu coração bate forte por automações."
        echo "I love to automate cloud solutions to make everything run smoothly! 🌐"
-       echo "Me encanta trabajar con la nube para mejorar la eficiencia y escalabilidad. ☁️🔥"
+       echo "Me encanta trabajar con la nube mejorando la eficiencia y escalabilidad." ☁️🔥"
     }
 
     echo "Classe* CloudEngineer instanciada!"
@@ -31,7 +31,7 @@ cloud_engineer
 
 ## Blogs
 
-- Personal website and blog: https://luiscorreiaops.github.io/luiscorreiaOps
+- Personal website and blog: https://luiscorreiaops.github.io
 
 
 ## Technologies & Tools
