@@ -1,0 +1,70 @@
+name: Conteudo
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-motivational-page:
+    runs-on: ubuntu-latest
+    environment: github-pages
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: IA
+        id: generate_text
+        run: |
+          echo "Chamada API"
+          API_KEY=${{ secrets.IA_API_KEY }}
+          
+          RESPONSE=$(curl -s -X POST https://api.groq.com/openai/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $API_KEY" \
+            -d '{
+              "model": "llama3-8b-8192",
+              "messages": [{"role": "user", "content": "Generate encouraging writing text about technology or programming, no longer than 35 lines and family friendly, write like a report."}]
+            }')
+
+          MOTIVATIONAL_TEXT=$(echo $RESPONSE | jq -r '.choices[0].message.content')
+          if [ -z "$MOTIVATIONAL_TEXT" ]; then
+            MOTIVATIONAL_TEXT="Well, it's not perfect, but it's definitely something!"
+          fi
+
+          CLEANED_TEXT=$(echo "$MOTIVATIONAL_TEXT" | tr '\n' ' ' | sed 's/\s\s*/ /g' | sed 's/^ //;s/ $//')
+          ESCAPED_TEXT=$(printf "%s" "$CLEANED_TEXT" | sed 's/[&/\"]/\\&/g; s/\([[:space:]]\)/\\\1/g; s/\\/\\\\/g')
+          ESCAPED_TEXT=$(echo "$ESCAPED_TEXT" | sed 's/\\\//\//g' | sed 's/\\"/"/g' | sed 's/\\\\/\\/g')
+
+          sed -i '/<div id="motivational-text">/,/<\/div>/c\<div id="motivational-text">'$ESCAPED_TEXT'</div>' index.html
+      
+      - name: cat index
+        run: cat index.html    
+
+      - name: Commit Push
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add index.html
+          git commit -m "Keep Devoping"
+          git push origin main
+
+      - name: Confg
+        uses: actions/configure-pages@v5
+
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './'
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

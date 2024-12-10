@@ -1,0 +1,60 @@
+name: Notas
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+env:
+  REP: "luiscorreiaOps/luiscorreiaOps.github.io"
+
+jobs:
+  add-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Add Frase
+        run: |
+          QUOTES=(
+            "**Keep learning! 🚀**"
+            "**Automate everything! 🤖**"
+            "**Debugging is like being a detective 🕵️‍♂️.**"
+            "**Cloud first, coffee second. ☁️☕**"
+            "**The best code is no code at all. 💻✨**"
+            "**Infrastructure as Code is the way. 📜☁️**"
+            "**Think twice, code once. 🛠️**"
+            "**Work smarter, not harder. 🧠⚡**"
+            "**Containers are the future. 🐳🚀**"
+            "**Logs never lie. 📜🔥**"
+          )
+          RANDOM_QUOTE=${QUOTES[$RANDOM % ${#QUOTES[@]}]}
+
+          sed -i '/\*\*.*\*\*/d' README.md
+
+          echo -e "$RANDOM_QUOTE\n" >> README.md
+
+      - name: Data de Alteração
+        run: |
+          CURRENT_DATE=$(date +"%Y-%m-%d %H:%M:%S")
+          if grep -q "atualizações automáticas" README.md; then
+            sed -i "s|atualização automática em .*|alterado em $CURRENT_DATE|" README.md
+          else
+            echo -e "atualização automática:\nalterado em $CURRENT_DATE" >> README.md
+          fi
+
+      - name: Config
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit & Push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN3 }}
+          REPOSITORY_NAME: ${{ env.REP }}
+        run: |
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${REPOSITORY_NAME}.git
+          git add README.md
+          git commit -m "Keep Developing" || echo "Nada a commitar."
+          git push origin main
