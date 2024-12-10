@@ -38,15 +38,15 @@ jobs:
             MOTIVATIONAL_TEXT="Well, it's not perfect, but it's definitely something!"
           fi
 
-          ESCAPED_TEXT=$(echo "$MOTIVATIONAL_TEXT" | sed 's/[&/\"]/\\&/g')
+          ESCAPED_TEXT=$(printf "%s" "$MOTIVATIONAL_TEXT" | sed 's/[&/\]/\\&/g')
 
           if grep -q '<div id="motivational-text">' index.html; then
-            sed -i 's|<div id="motivational-text">.*</div>|<div id="motivational-text">'"$ESCAPED_TEXT"'</div>|' index.html
+            sed -i "s|<div id=\"motivational-text\">.*</div>|<div id=\"motivational-text\">$ESCAPED_TEXT</div>|" index.html
           else
-            sed -i '/<body>/a <div id="motivational-text">'"$ESCAPED_TEXT"'</div>' index.html
+            sed -i "/<body>/a <div id=\"motivational-text\">$ESCAPED_TEXT</div>" index.html
           fi
 
-      - name: cat
+      - name: catL
         run: cat index.html    
 
       - name: Commit & Push
