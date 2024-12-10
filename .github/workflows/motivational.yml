@@ -38,7 +38,7 @@ jobs:
             MOTIVATIONAL_TEXT="Well, it's not perfect, but it's definitely something!"
           fi
 
-          ESCAPED_TEXT=$(printf "%s" "$MOTIVATIONAL_TEXT" | sed -E 's/[&/]/\\&/g; s/"/\\"/g')
+          ESCAPED_TEXT=$(printf "%s" "$MOTIVATIONAL_TEXT" | sed ':a;N;$!ba;s/\n/<br>/g' | sed -E 's/[&/]/\\&/g; s/"/\\"/g')
 
           if grep -q '<div id="motivational-text">' index.html; then
             sed -i "s|<div id=\"motivational-text\">.*</div>|<div id=\"motivational-text\">$ESCAPED_TEXT</div>|" index.html
