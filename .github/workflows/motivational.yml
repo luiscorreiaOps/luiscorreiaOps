@@ -46,6 +46,8 @@ jobs:
             sed -i "/<body>/a <div id=\"motivational-text\">$ESCAPED_TEXT</div>" index.html
           fi
 
+          echo "<!-- set in $(date) -->" >> index.html
+
       - name: cat
         run: cat index.html    
 
