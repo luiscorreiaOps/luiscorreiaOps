@@ -31,7 +31,7 @@ cloud_engineer
 
 ## Blogs
 
-- Personal website and blog: https://luiscorreiaops.github.io
+- Personal website and blog: https://luiscorreiaops.github.io/luiscorreiaOps
 
 
 ## Technologies & Tools
