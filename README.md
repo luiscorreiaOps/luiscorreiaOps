@@ -111,7 +111,10 @@ alterado em 2024-12-23 09:16:28
 
 atualização automática:
 alterado em 2024-12-24 09:15:29
-**Containers are the future. 🐳🚀**
 
 atualização automática:
 alterado em 2024-12-25 09:15:25
+**Infrastructure as Code is the way. 📜☁️**
+
+atualização automática:
+alterado em 2024-12-26 09:15:32
