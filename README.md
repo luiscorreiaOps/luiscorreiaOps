@@ -123,7 +123,10 @@ alterado em 2024-12-27 09:15:22
 
 atualização automática:
 alterado em 2024-12-28 09:14:00
-**Infrastructure as Code is the way. 📜☁️**
 
 atualização automática:
 alterado em 2024-12-29 09:13:32
+**Cloud first, coffee second. ☁️☕**
+
+atualização automática:
+alterado em 2024-12-30 09:16:17
