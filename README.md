@@ -142,7 +142,10 @@ alterado em 2025-02-18 09:16:10
 
 atualização automática:
 alterado em 2025-02-19 09:16:13
-**Work smarter, not harder. 🧠⚡**
 
 atualização automática:
 alterado em 2025-02-20 09:16:16
+**Infrastructure as Code is the way. 📜☁️**
+
+atualização automática:
+alterado em 2025-02-21 09:15:50
