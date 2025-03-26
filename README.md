@@ -241,7 +241,10 @@ alterado em 2025-03-23 09:14:57
 
 atualização automática:
 alterado em 2025-03-24 09:18:34
-**Think twice, code once. 🛠️**
 
 atualização automática:
 alterado em 2025-03-25 09:17:25
+**Infrastructure as Code is the way. 📜☁️**
+
+atualização automática:
+alterado em 2025-03-26 09:17:24
