@@ -382,7 +382,10 @@ alterado em 2025-05-09 09:17:54
 
 atualização automática:
 alterado em 2025-05-10 09:15:50
-**Automate everything! 🤖**
 
 atualização automática:
 alterado em 2025-05-11 09:16:16
+**Infrastructure as Code is the way. 📜☁️**
+
+atualização automática:
+alterado em 2025-05-12 09:19:23
