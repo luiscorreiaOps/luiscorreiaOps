@@ -391,7 +391,10 @@ alterado em 2025-05-12 09:19:23
 
 atualização automática:
 alterado em 2025-05-13 09:19:26
-**Infrastructure as Code is the way. 📜☁️**
 
 atualização automática:
 alterado em 2025-05-14 09:18:17
+**Debugging is like being a detective 🕵️‍♂️.**
+
+atualização automática:
+alterado em 2025-05-15 09:18:27
