@@ -523,7 +523,10 @@ alterado em 2025-06-25 09:20:27
 
 atualização automática:
 alterado em 2025-06-26 09:19:10
-**The best code is no code at all. 💻✨**
 
 atualização automática:
 alterado em 2025-06-27 09:18:50
+**Infrastructure as Code is the way. 📜☁️**
+
+atualização automática:
+alterado em 2025-06-28 09:17:27
