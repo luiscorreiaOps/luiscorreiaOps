@@ -19,16 +19,16 @@ jobs:
         run: |
 
           QUOTES=(
-            "**Keep learning! 🚀**"
-            "**Automate everything! 🤖**"
-            "**Debugging is like being a detective 🕵️‍♂️.**"
-            "**Cloud first, coffee second. ☁️☕**"
-            "**The best code is no code at all. 💻✨**"
-            "**Infrastructure as Code is the way. 📜☁️**"
-            "**Think twice, code once. 🛠️**"
-            "**Work smarter, not harder. 🧠⚡**"
-            "**Containers are the future. 🐳🚀**"
-            "**Logs never lie. 📜🔥**"
+            "** **Keep learning! 🚀** **"
+            "** **Automate everything! 🤖** **"
+            "** **Debugging is like being a detective 🕵️‍♂️.** **"
+            "** **Cloud first, coffee second. ☁️☕** **"
+            "** **The best code is no code at all. 💻✨** **"
+            "** **Infrastructure as Code is the way. 📜☁️** **"
+            "** **Think twice, code once. 🛠️** **"
+            "** **Work smarter, not harder. 🧠⚡** **"
+            "** **Containers are the future. 🐳🚀** **"
+            "** **Logs never lie. 📜🔥** **"
           )
           RANDOM_QUOTE=${QUOTES[$RANDOM % ${#QUOTES[@]}]}
 
