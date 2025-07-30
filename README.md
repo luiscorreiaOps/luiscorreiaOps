@@ -11,9 +11,9 @@ CloudEngineer() {
     local lg=("pt_BR" "en_US" "es_LA")
     local greet() {
 
-      echo "Salve! Sou um Cloud Engineer brasileiro e vivo entre servidores e nuvens! 💻"
-      echo "Falo ${lg[0]} No dia-a-dia, mas meu coração bate forte por automações. 🤖"
-      echo "With ${lg[1]} I build resilient cloud architectures from the ground up. 🌐"
+      echo "Salve! Sou um Cloud Engineer brasileiro e vivo entre servidores e nuvens!    💻"
+      echo "Falo ${lg[0]} No dia-a-dia, mas meu coração bate forte por automações.       🤖"
+      echo "With ${lg[1]} I build resilient cloud architectures from the ground up.      🌐"
       echo "Con ${lg[2]}  Traduzco requisitos de negocio en infraestructura como código. ☁️"
     }
 
