@@ -63,11 +63,11 @@ cloud_engineer
 
 ---
 <!--START_QUOTE-->
-** Think twice, code once. 🛠️ **
+** Think twice, code once.🛠️ **
 <!--END_QUOTE-->
 
 ---
-### 🔄 Update
+# 🔄 Update
 <!--START_UPDATES-->
 
 <!--END_UPDATES-->
