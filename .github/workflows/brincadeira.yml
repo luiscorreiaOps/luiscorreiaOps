@@ -1,0 +1,90 @@
+name: Atualiza README com Frase e Log
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+env:
+  REP: "luiscorreiaOps/luiscorreiaOps" 
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Atualiza Frase e Log
+        run: |
+
+          QUOTES=(
+            "**Keep learning! 🚀**"
+            "**Automate everything! 🤖**"
+            "**Debugging is like being a detective 🕵️‍♂️.**"
+            "**Cloud first, coffee second. ☁️☕**"
+            "**The best code is no code at all. 💻✨**"
+            "**Infrastructure as Code is the way. 📜☁️**"
+            "**Think twice, code once. 🛠️**"
+            "**Work smarter, not harder. 🧠⚡**"
+            "**Containers are the future. 🐳🚀**"
+            "**Logs never lie. 📜🔥**"
+          )
+          RANDOM_QUOTE=${QUOTES[$RANDOM % ${#QUOTES[@]}]}
+
+          CURRENT_DATE=$(date +"%d-%m-%Y %H:%M")
+          NEW_LOG_ENTRY="* Atualização automática: \`$CURRENT_DATE\`"
+
+          EXISTING_LOGS=$(sed -n '/<!--START_UPDATES-->/,/<!--END_UPDATES-->/p' README.md | sed '1d;$d')
+
+          COMBINED_LOGS=$(echo -e "$NEW_LOG_ENTRY\n$EXISTING_LOGS" | head -n 3)
+
+          export FINAL_QUOTE=$RANDOM_QUOTE
+          export FINAL_LOGS=$COMBINED_LOGS
+
+          python -c "
+          import re
+          import os
+
+          quote = os.environ['FINAL_QUOTE']
+          logs = os.environ['FINAL_LOGS']
+          
+          with open('README.md', 'r') as f:
+              content = f.read()
+          
+          content = re.sub(
+              r'<!--START_QUOTE-->.*<!--END_QUOTE-->',
+              f'<!--START_QUOTE-->\\n{quote}\\n<!--END_QUOTE-->',
+              content,
+              flags=re.DOTALL
+          )
+          
+          content = re.sub(
+              r'<!--START_UPDATES-->.*<!--END_UPDATES-->',
+              f'<!--START_UPDATES-->\\n{logs}\\n<!--END_UPDATES-->',
+              content,
+              flags=re.DOTALL
+          )
+          
+          with open('README.md', 'w') as f:
+              f.write(content)
+          "
+
+      - name: Configura Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit & Push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN3 }} 
+          REPOSITORY_NAME: ${{ env.REP }}
+        run: |
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${REPOSITORY_NAME}.git
+          git add README.md
+          if ! git diff --staged --quiet; then
+            git commit -m "Keep DevOps"
+            git push origin main
+          else
+            echo "Nenhuma alteração."
+          fi
