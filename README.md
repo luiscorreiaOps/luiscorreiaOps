@@ -54,7 +54,7 @@ cloud_engineer
 ![GCP](https://img.shields.io/badge/Cloud-GCP-informational?style=flat&logo=googlecloud&logoColor=white&color=DB4437)
 ![Azure](https://img.shields.io/badge/Cloud-Azure-informational?style=flat&logo=microsoftazure&logoColor=white&color=0078D4)
 ![Kubernetes](https://img.shields.io/badge/Tool-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=6aa6f8)
-![Docker](…g.shields.io/badge/Tool-Ansible-informational?style=flat&logo=ansible&logoColor=white&color=EE0000)
+![Docker](https://img.shields.io/badge/Container-Docker-informational?style=flat&logo=amazon-ecs&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Tool-Jenkins-informational?style=flat&logo=jenkins&logoColor=white&color=F7B93E)
 ![Prometheus](https://img.shields.io/badge/Tool-Prometheus-informational?style=flat&logo=prometheus&logoColor=white&color=E6522C)
 ![Grafana](https://img.shields.io/badge/Tool-Grafana-informational?style=flat&logo=grafana&logoColor=white&color=F46800)
@@ -67,7 +67,7 @@ cloud_engineer
 <!--END_QUOTE-->
 
 ---
-### 🔄 Últimas Atualizações
+### 🔄 Update
 <!--START_UPDATES-->
 
 <!--END_UPDATES-->
